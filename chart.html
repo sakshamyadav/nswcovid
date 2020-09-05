@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.8.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "hconcat": [{"data": {"name": "data-8ba866462471f186a7bfe6effbb60faf"}, "mark": {"type": "bar", "cornerRadiusTopLeft": 3, "cornerRadiusTopRight": 3}, "encoding": {"color": {"type": "nominal", "field": "Source", "legend": {"orient": "left"}}, "tooltip": [{"type": "nominal", "field": "notification_date", "title": "Date"}, {"type": "nominal", "field": "Source", "title": "Source"}, {"type": "quantitative", "field": "long", "title": "New Cases"}], "x": {"type": "nominal", "axis": {"title": "Date"}, "field": "notification_date"}, "y": {"type": "quantitative", "axis": {"title": "New Cases"}, "field": "long"}}, "height": 200, "title": "New Cases in Postcode 2162 (Latest Case: 2020-09-03)", "width": 500}, {"data": {"name": "data-44fb0606734f50169050d0680d72e9ed"}, "mark": {"type": "line", "point": true}, "encoding": {"tooltip": [{"type": "nominal", "field": "notification_date", "title": "Date"}, {"type": "quantitative", "field": "cumul", "title": "Total Cases"}], "x": {"type": "nominal", "axis": {"title": "Date"}, "field": "notification_date"}, "y": {"type": "quantitative", "axis": {"title": "Total Cases (Cumulative)"}, "field": "cumul"}}, "height": 200, "title": "Total Cases in Postcode 2162 (Current Total: 8)", "width": 500}], "resolve": {"scale": {"color": "independent"}}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-8ba866462471f186a7bfe6effbb60faf": [{"notification_date": "2020-03-19", "postcode": 2162.0, "Source": "Overseas", "lhd_2010_code": 1, "lhd_2010_name": 1, "lga_code19": 1, "lga_name19": 1, "locality": 1, "name": 1, "state": 1, "long": 1, "lat": 1}, {"notification_date": "2020-03-22", "postcode": 2162.0, "Source": "Overseas", "lhd_2010_code": 1, "lhd_2010_name": 1, "lga_code19": 1, "lga_name19": 1, "locality": 1, "name": 1, "state": 1, "long": 1, "lat": 1}, {"notification_date": "2020-03-24", "postcode": 2162.0, "Source": "Overseas", "lhd_2010_code": 1, "lhd_2010_name": 1, "lga_code19": 1, "lga_name19": 1, "locality": 1, "name": 1, "state": 1, "long": 1, "lat": 1}, {"notification_date": "2020-03-25", "postcode": 2162.0, "Source": "Overseas", "lhd_2010_code": 1, "lhd_2010_name": 1, "lga_code19": 1, "lga_name19": 1, "locality": 1, "name": 1, "state": 1, "long": 1, "lat": 1}, {"notification_date": "2020-03-29", "postcode": 2162.0, "Source": "Local (Unknown Source)", "lhd_2010_code": 1, "lhd_2010_name": 1, "lga_code19": 1, "lga_name19": 1, "locality": 1, "name": 1, "state": 1, "long": 1, "lat": 1}, {"notification_date": "2020-09-01", "postcode": 2162.0, "Source": "Local (Known Source)", "lhd_2010_code": 1, "lhd_2010_name": 1, "lga_code19": 1, "lga_name19": 1, "locality": 1, "name": 1, "state": 1, "long": 1, "lat": 1}, {"notification_date": "2020-09-03", "postcode": 2162.0, "Source": "Local (Known Source)", "lhd_2010_code": 2, "lhd_2010_name": 2, "lga_code19": 2, "lga_name19": 2, "locality": 2, "name": 2, "state": 2, "long": 2, "lat": 2}], "data-44fb0606734f50169050d0680d72e9ed": [{"notification_date": "2020-03-19", "postcode": 2162.0, "Source": 1, "lhd_2010_code": 1, "lhd_2010_name": 1, "lga_code19": 1, "lga_name19": 1, "locality": 1, "name": 1, "state": 1, "long": 1, "lat": 1, "cumul": 1}, {"notification_date": "2020-03-22", "postcode": 2162.0, "Source": 1, "lhd_2010_code": 1, "lhd_2010_name": 1, "lga_code19": 1, "lga_name19": 1, "locality": 1, "name": 1, "state": 1, "long": 1, "lat": 1, "cumul": 2}, {"notification_date": "2020-03-24", "postcode": 2162.0, "Source": 1, "lhd_2010_code": 1, "lhd_2010_name": 1, "lga_code19": 1, "lga_name19": 1, "locality": 1, "name": 1, "state": 1, "long": 1, "lat": 1, "cumul": 3}, {"notification_date": "2020-03-25", "postcode": 2162.0, "Source": 1, "lhd_2010_code": 1, "lhd_2010_name": 1, "lga_code19": 1, "lga_name19": 1, "locality": 1, "name": 1, "state": 1, "long": 1, "lat": 1, "cumul": 4}, {"notification_date": "2020-03-29", "postcode": 2162.0, "Source": 1, "lhd_2010_code": 1, "lhd_2010_name": 1, "lga_code19": 1, "lga_name19": 1, "locality": 1, "name": 1, "state": 1, "long": 1, "lat": 1, "cumul": 5}, {"notification_date": "2020-09-01", "postcode": 2162.0, "Source": 1, "lhd_2010_code": 1, "lhd_2010_name": 1, "lga_code19": 1, "lga_name19": 1, "locality": 1, "name": 1, "state": 1, "long": 1, "lat": 1, "cumul": 6}, {"notification_date": "2020-09-03", "postcode": 2162.0, "Source": 2, "lhd_2010_code": 2, "lhd_2010_name": 2, "lga_code19": 2, "lga_name19": 2, "locality": 2, "name": 2, "state": 2, "long": 2, "lat": 2, "cumul": 8}]}};
+      var embedOpt = {"renderer": "svg", "mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
